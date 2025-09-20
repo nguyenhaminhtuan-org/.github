@@ -28,8 +28,8 @@ body:
       label: Environment
       description: Which environments did the bug occurred?
       options:
-        - QA / Test
-        - Production
+        - label: QA / Test
+        - label: Production
     validations:
       required: true
   - type: textarea
