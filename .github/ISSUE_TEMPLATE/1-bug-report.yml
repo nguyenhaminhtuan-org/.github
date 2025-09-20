@@ -1,0 +1,79 @@
+name: Bug Report
+description: Create an issue to report bug occurred
+title: "[Bug]: "
+type: Bug
+labels:
+  - bug
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Write a clear and concise summary of context and description regarding the bug.
+      value: |
+        Your description goes here.
+
+        Providing some optional to describe the bug.
+        - **Version:** [e.g. 0.1.0]
+        - **Severity:** Critical | High | Medium | Minor
+        - **Reproducibility Rate:** [e.g. 100%]
+        - **Account Used:** [e.g. John Doe - Administrator]
+        - **Date - time occurred:** [e.g. 2025/01/01 07:00:00]
+        - **Source URL:** [e.g. https://google.com]
+    validations:
+      required: true
+- type: checkboxes
+  id: app-env
+  attributes:
+    label: Environment
+    description: Which environments did the bug occurred?
+    options:
+      - QA / Test
+      - Production
+  validations:
+    required: true
+- type: textarea
+  id: user-env
+  attributes:
+    label: Your environment
+    description: Additional environment information from your devices / tools.
+    value: |
+      - **Device**: [e.g.  IPhone 17]
+      - **OS**: [e.g. macOS Tahoe 26.0]
+      - **Browser / API Client**: [e.g. Chrome Version 140.0.7339.186 (Official Build) (arm64)]
+- type: textarea
+  id: current-behaviors
+  attributes:
+    label: Current behaviors or results
+    description: Desribe the current behaviors or results in detail.
+  validations:
+    required: true
+- type: textarea
+  id: expected-behaviors
+  attributes:
+    label: Expected behaviors or results
+    description: Desribe the expected behaviors or results in detail.
+  validations:
+    required: true
+- type: textarea
+  id: reproduce
+  attributes:
+    label: Steps to reproduce
+    description: How do you trigger this bug? Please walk us through it step by step.
+    value: |
+      1.
+      2.
+      3.
+      ...
+  validations:
+    required: true
+- type: textarea
+  id: proof
+  attributes:
+    label: Visual proof
+    description: Providing your screenshots, videos or texts
+- type: textarea
+  id: aditional
+  attributes:
+    label: Aditional information
+    description: Providing the related issues, reference links, etc
