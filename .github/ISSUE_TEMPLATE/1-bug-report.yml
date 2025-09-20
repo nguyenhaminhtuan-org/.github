@@ -25,11 +25,11 @@ body:
   - type: checkboxes
     id: app-env
     attributes:
-    label: Environment
-    description: Which environments did the bug occurred?
-    options:
-      - QA / Test
-      - Production
+      label: Environment
+      description: Which environments did the bug occurred?
+      options:
+        - QA / Test
+        - Production
     validations:
       required: true
   - type: textarea
@@ -76,4 +76,4 @@ body:
     id: aditional
     attributes:
       label: Aditional information
-      description: "Providing the related issues, reference links"
+      description: Providing the related issues, reference links
